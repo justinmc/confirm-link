@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>
+		confirm-link
+	</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+	<h1>confirm-link</h1>
+	<p>
+		This simple project allows you to prompt the user to confirm before visiting the clicked click. Try it below.
+	</p>
+	<br /><br />
+	<a data-confirm-link="Are you sure you want to visit Page A?  I hear Page B is great this time of year." href="pagea.html">Page A</a>
+	<br />
+	<a data-confirm-link="Are you sure you want to visit Page B?  All the cool kids are over at Page A." href="pageb.html">Page B</a>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+    	$('[data-confirm-link]').click(function () {
+    		if (confirm($(this).data('confirm-link')))
+    			window.location = $(this).data('link');
+    		return false;
+    	});
+    });
+</script> 
+
+</body>
+</html>
