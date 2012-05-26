@@ -1,4 +1,13 @@
 Author: Justin McCandless
 www.justinmccandless.com
 
-A quick and easy javascript project to prompt the user to confirm their choice after clicking a link.  Users jQuery and CSS3 data attributes.
+Blog Post: justinmccandless.com/index.php?entry=66
+github: github.com/justinmc/confirm-link/
+
+
+A quick and easy javascript project to prompt the user to confirm their choice after clicking a link.  Uses jQuery and CSS3 data attributes.
+
+
+Usage
+
+Include the provided javascript, and include a data-confirm-link attribute in every <a> tag that you want to prompt before following on.  The value of the data-confirm-link attribute is a string containing the message displayed in the prompt box. 
