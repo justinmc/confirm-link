@@ -19,9 +19,9 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
-    	$('[data-confirm-link]').click(function () {
+    	$('a[data-confirm-link]').click(function () {
     		if (confirm($(this).data('confirm-link')))
-    			window.location = $(this).data('link');
+    			window.location = $(this).attr('href');
     		return false;
     	});
     });
