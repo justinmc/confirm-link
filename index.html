@@ -21,14 +21,6 @@
 	<br />
 	<a data-confirm-link="Are you sure you want to visit Page B?  All the cool kids are over at Page A." href="pageb.html">Page B</a>
 	
-<script type="text/javascript">
-    $(document).ready(function () {
-    	$('a[data-confirm-link]').click(function () {
-    		if (confirm($(this).data('confirm-link')))
-    			window.location = $(this).attr('href');
-    		return false;
-    	});
-    });
-</script> 
+<script type="text/javascript" src="confirm-link.js"></script> 
 </body>
 </html>
