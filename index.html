@@ -9,6 +9,10 @@
 </head>
 <body>
 	<h1>confirm-link</h1>
+	Blog Post: <a href="http://www.justinmccandless.com/index.hp?entry=1">justinmccandless.com/index.php?entry=1</a>
+	<br />
+	github: <a href="http://github.com/justinmc/confirm-link">github.com/justinmc/confirm-link</a>
+	<br /><br />
 	<p>
 		This simple project allows you to prompt the user to confirm before visiting the clicked click. Try it below.
 	</p>
@@ -16,7 +20,7 @@
 	<a data-confirm-link="Are you sure you want to visit Page A?  I hear Page B is great this time of year." href="pagea.html">Page A</a>
 	<br />
 	<a data-confirm-link="Are you sure you want to visit Page B?  All the cool kids are over at Page A." href="pageb.html">Page B</a>
-
+	
 <script type="text/javascript">
     $(document).ready(function () {
     	$('a[data-confirm-link]').click(function () {
@@ -26,6 +30,5 @@
     	});
     });
 </script> 
-
 </body>
 </html>
